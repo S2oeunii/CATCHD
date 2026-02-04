@@ -1,0 +1,155 @@
+/* import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Pretendard 폰트 가져오기 */
+@import "font.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* min-width: 1024px; */
+    font-family: "pretendard", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    cursor: pointer;
+}
+
+a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul { list-style: none; }
+
+#wrap {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+}
+
+.topBtn {
+    position: fixed;
+    right: 2.34vw;
+    bottom: 1.56vw;
+    background-color: transparent;
+    background-image: url('../public/topBtn.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 5.47vw;
+    height: 5.47vw;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+    z-index: 900;
+    transition: all .3s ease-in-out;
+}
+
+.topBtn:hover {
+    background-image: url('../public/topBtn-blue.svg');
+}
+
+#project, #design, #service {
+    cursor: default;
+}
+
+.sub-title {
+    margin-left: 7.81vw;
+    font-family: "montserrat", sans-serif;
+    font-size: 1.25vw;
+    font-weight: 600;
+    line-height: 1.88vw;
+    vertical-align: top;
+    opacity: 7;
+}
+
+.desc-title {
+    font-family: "pretendard", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 700;
+    line-height: 3.59vw;
+    vertical-align: top;
+    margin: 1.41vw 0 1.88vw 0;
+}
+
+.desc-body {
+    line-height: 2.34vw;
+    vertical-align: top;
+    font-family: "pretendard", sans-serif;
+    font-size: 1.41vw;
+    font-weight: 500;
+}
+
+.blue-title {
+    font-family: "pretendard", sans-serif;
+    font-size: 1.56vw;
+    font-weight: 600;
+    vertical-align: top;
+    color: #3E5CF8;
+}
+
+#service .diagnosis .blue-title,
+#service .routine .blue-title,
+#service .medical .blue-title {
+    margin-left: 14.06vw;
+    
+}
+
+.sein-desc .desc-title, .sein-desc .desc-body,
+.diag-desc .desc-title, .diag-desc .desc-body,
+.rout-desc .desc-title, .rout-desc .desc-body,
+.medi-desc .desc-title, .medi-desc .desc-body {
+    opacity: 0;
+}
+
+.sein-desc.active .desc-title {
+    animation: descSlideUp .6s ease-in forwards;
+}
+
+.diag-desc.active .desc-title,
+.rout-desc.active .desc-title,
+.medi-desc.active .desc-title {
+    animation: descSlideLeft .6s ease-in forwards;
+}
+
+.sein-desc.active .desc-body,
+.diag-desc.active .desc-body,
+.rout-desc.active .desc-body,
+.medi-desc.active .desc-body {
+    animation: descFade .6s ease-in forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes descSlideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-8vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes descSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(5vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes descFade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

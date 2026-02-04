@@ -1,0 +1,121 @@
+footer {
+    background-color: #1A1A1A;
+    padding: 0 7.81vw;
+}
+
+footer li {
+    cursor: default;
+}
+
+.footer-top {
+    padding-top: 9.53vw;
+    margin-bottom: 10.08vw;
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-top .footer-logo {
+    width: 13.46vw;
+    height: auto;
+    margin-right: 15.94vw;
+}
+
+.footer-top .team {
+    font-family: "montserrat", sans-serif;
+    vertical-align: top;
+    text-align: left;
+    display: flex;
+}
+
+.footer-top .team li {
+    margin-right: 11.8vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top .team li:last-child {
+    margin-right: 0;
+}
+
+.footer-top .team span {
+    color: #C9C9C9;
+    font-size: 1.25vw;
+    font-weight: 500;
+    margin-bottom: 0.47vw;
+    display: block;
+}
+
+.footer-top .team p {
+    color: #fff;
+    font-size: 1.56vw;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.footer-bottom {
+    font-family: "pretendard", sans-serif;
+    font-size: 1.09vw;
+    font-weight: 500;
+    line-height: 2.09vw;
+    vertical-align: top;
+    color: #999;
+    padding-bottom: 3.98vw;
+}
+
+.footer-bottom .store {
+    display: flex;
+    gap: 1.09vw;
+    transform: translateX(-0.78vw);
+}
+
+.footer-bottom .store li {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.78vw;
+    padding: 0.78vw;
+}
+
+.footer-bottom .store li img {
+    width: 1.17vw;
+    height: auto;
+}
+
+.footer-bottom .line {
+    width: 84.45vw;
+    height: 0.08vw;
+    background-color: #999;
+    margin-top: 1.25vw;
+    margin-bottom: 1.88vw;
+}
+
+.footer-bottom .copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright .cr-left {
+    display: flex;
+    align-items: center;
+    gap: 3.67vw;
+}
+
+.copyright .cr-left ul {
+    display: flex;
+    gap: 2.19vw;
+}
+
+.copyright .cr-right {
+    display: flex;
+    align-items: center;
+    gap: 1.41vw;
+}
+
+.copyright .cr-right .youtube {
+    width: 3.05vw;
+    height: auto;
+}
+
+.copyright .cr-right .instagram {
+    width: 2.34vw;
+    height: auto;
+}
