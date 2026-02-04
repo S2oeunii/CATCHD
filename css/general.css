@@ -85,6 +85,7 @@ ul { list-style: none; }
     font-family: "pretendard", sans-serif;
     font-size: 1.41vw;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .blue-title {
