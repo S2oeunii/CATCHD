@@ -1337,6 +1337,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     font-weight: 800;
     line-height: 3.59vw;
     margin-bottom: 1.02vw;
+    cursor: default;
 }
 
 #download div a {
